@@ -6,9 +6,12 @@ import java.util.List;
 public abstract class Shape {
     public String color;
 
-    public Shape(String color) {
+    private static int count = 0;
+
+    public Shape(String colour) {
         System.out.println("Inside Shape constructor");
-        this.color = color;
+        this.colour = colour;
+        count++;
     }
 
     public void foo() {
